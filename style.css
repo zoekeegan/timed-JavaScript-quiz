@@ -1,0 +1,35 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* display: flex;
+    justify-content: center; */
+}
+
+/* .text1 {
+    display: flex;
+    justify-content: center;
+} */
+
+#timer {
+    padding: 10px;
+    font-size: xx-large;
+    width: 10vw;
+    height: 20vh;
+}
+
+.start-btn {
+    font-size: xx-large;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#intro {
+    font-size: x-large;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
