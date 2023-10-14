@@ -1,6 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
 } */
 
 #timer {
-    padding: 10px;
+    padding: 0px;
     font-size: xx-large;
     width: 10vw;
     height: 20vh;
@@ -29,7 +30,14 @@ body {
 
 #intro {
     font-size: x-large;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     justify-content: center;
 }
+
+#start {
+    color: white;
+    background-color:darkblue;
+    border-radius: 10px; 
+    padding: 10px;
+    border-color: darkblue;
