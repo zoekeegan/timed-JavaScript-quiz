@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Fundamentals Quiz</title>
+    <title>JavaScript Quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="timer">
-        00:00:75
-    </div>
+    <div class="intro">
+        <div id="timer">
+            <h2>Time: 75</h2> 
+            <span id="time"></span>
+        </div>
+        
+        <div id="header">
+        <h1>Coding Quiz Challenge</h1>
+        </div>
 
-    <div id="intro">
-        Try to answer the following questions within the time limit. Incorrect answers will decrease your remaining time by 10 seconds.
-    </div>
+        <div id="p"
+        <p>Try to answer the following questions within the time limit. Incorrect answers reduce the remaining time by 10 seconds.</p>
+        </div>
 
-    <div class="start-btn">   
-        <button class="start-btn" id="start">
-        Start Quiz
+        <button id="start-btn">
+            Start Quiz 
         </button>
     </div>
 
-    <script src="script.js"></script>
+    <div class="questions">
+        <div id="question-1"></div>
+        <ul id="answers-1"></ul>
+
+    </div>
+
+
+
+
+<script src="script.js"></script>
+
+    
+
 
 </body>
 </html>
