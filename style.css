@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif ;
+    background-color: aliceblue;
 }
 
 #timer {
+    padding: 15px;
     font-size: 20px;
     text-align: right;
 }
@@ -13,6 +15,7 @@
     text-align: center;
     margin: 30px;
     padding: 30px;
+    font-size: 25px;
 }
 
 #title {
@@ -20,21 +23,26 @@
 }
 
 #start-button {
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 5px;
     margin: 30px;
     padding: 10px;
+    background-color: lightblue;
 }
 
 .questions {
     text-align: center;
-    margin: 30px;
+    margin: 0px;
+    font-size: 20px;
+    padding:0px;
 }
 
 .answer-button {
     padding: 20px;
     width: 100%;
     border: 0px;
+    font-size: 25px;
+    text-align: left;
     
 }
 

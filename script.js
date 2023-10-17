@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
       // q3.style.display = ''
       // q4.style.display = ''
       // q5.style.display = ''
-      // console.log ("started")
   
       let timeLeft = 75;
       timerDisplay.textContent = timeLeft;
