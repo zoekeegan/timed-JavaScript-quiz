@@ -3,10 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const timerDisplay = document.getElementById('timer');
     const pageOne = document.getElementById ('intro');
     const questionOne = document.getElementById ('question1');
+    const quiz1 = document.getElementById ('quiz1');
   
+
     let countdown; 
 
     questionOne.style.display = 'none';
+    quiz1.style.display = 'none';
+
   
     startButton.addEventListener('click', startQuiz);
   
@@ -15,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       pageOne.style.display = 'none';
       timerDisplay.style.display = 'block';
       questionOne.style.display = ''
+      quiz1.style.display = ''
       // console.log ("started")
   
       let timeLeft = 75;
