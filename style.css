@@ -1,62 +1,14 @@
-/* *, *::before, *::after {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
-}
-
-body {
-
+* {
+    margin: 20;
+    padding: 20;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 #timer {
-    padding: 0px;
-    font-size: xx-large;
-    width: 10vw;
-    height: 20vh;
+    font-size: 20px;
+    text-align: right;
 }
-
-.start-btn {
-    font-size: xx-large;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
 
 #intro {
-    font-size: x-large;
-    padding: 30px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
-
-#start {
-    color: white;
-    background-color:darkblue;
-    border-radius: 10px; 
-    padding: 10px;
-    border-color: darkblue;
-} */
-
-.intro {
-    font-family: Arial, Helvetica, sans-serif;
-    background: white;
-}
-
-#timer {
-
-}
-
-#time {
-
-}
-
-#p {
-    font-size: larger;
-}
-
-#start-btn {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: x-large;
-}
-
