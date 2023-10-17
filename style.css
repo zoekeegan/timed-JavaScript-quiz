@@ -26,13 +26,9 @@
     padding: 10px;
 }
 
-#quiz1 {
+.questions {
     text-align: center;
     margin: 30px;
-}
-
-#question1 {
-    padding: 20px;
 }
 
 .answer-button {

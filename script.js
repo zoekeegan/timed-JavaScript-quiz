@@ -2,14 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const startButton = document.getElementById('start-button');
     const timerDisplay = document.getElementById('timer');
     const pageOne = document.getElementById ('intro');
-    const questionOne = document.getElementById ('question1');
-    const quiz1 = document.getElementById ('quiz1');
+    const q1 = document.getElementById ('q1');
+    const q2 = document.getElementById ('q2');
+    const q3 = document.getElementById ('q3');
+    const q4 = document.getElementById ('q4');
+    const q5 = document.getElementById ('q5');
   
 
     let countdown; 
 
-    questionOne.style.display = 'none';
-    quiz1.style.display = 'none';
+    q1.style.display = 'none';
+    q2.style.display = 'none';
+    q3.style.display = 'none';
+    q4.style.display = 'none';
+    q5.style.display = 'none';
 
   
     startButton.addEventListener('click', startQuiz);
@@ -18,8 +24,11 @@ document.addEventListener('DOMContentLoaded', function () {
       startButton.style.display = 'none';
       pageOne.style.display = 'none';
       timerDisplay.style.display = 'block';
-      questionOne.style.display = ''
-      quiz1.style.display = ''
+      q1.style.display = ''
+      // q2.style.display = ''
+      // q3.style.display = ''
+      // q4.style.display = ''
+      // q5.style.display = ''
       // console.log ("started")
   
       let timeLeft = 75;
