@@ -1,9 +1,9 @@
 # timed-JavaScript-quiz
 Module 4 Challenge
 
-GIVEN I am taking a code quiz
+<!-- GIVEN I am taking a code quiz
 WHEN I click the start button
-THEN a timer starts and I am presented with a question
+THEN a timer starts and I am presented with a question -->
 WHEN I answer a question
 THEN I am presented with another question
 WHEN I answer a question incorrectly
