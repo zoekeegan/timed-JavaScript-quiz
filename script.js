@@ -6,7 +6,21 @@ const questionThree = document.getElementById ('question-three');
 const questionFour = document.getElementById ('question-four');
 const questionFive = document.getElementById ('question-five');
 const endPage = document.getElementById ('end-page');
+const timerDisplay = document.getElementById ('timer');
 
+let countdown; 
+
+  
+let timeLeft = 75;
+timerDisplay.textContent = timeLeft;
+
+ countdown = setInterval(function () {
+  timeLeft--;
+  timerDisplay.textContent = timeLeft;
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+  }
+}, 1000);
 
 
 question.style.display = 'none';
@@ -62,6 +76,7 @@ function endQuiz () {
   console.log ('end');
   questionFive.style.display = 'none';
   endPage.style.display = '';
+  // timerDisplay.style.display = 'none';
 }
   
 
@@ -71,65 +86,12 @@ function endQuiz () {
   
   
   
-  //   // const startButton = document.getElementById('#start-button');
-  //   const timerDisplay = document.getElementById('#timer');
-  //   const pageOne = document.getElementById ('#intro');
-  //   const questionOne = document.getElementById ('#question-one');
-  
-    
-  //   let countdown; 
 
-  //   // questionOne.style.display = 'none';
-
-  
-  //   startButton.addEventListener('click', startQuiz);
-
-  
-  //   function startQuiz() {
-  //     console.log ('started')
-  //     startButton.style.display = 'none';
-  //     pageOne.style.display = 'none';
-  //     timerDisplay.style.display = 'block';
-  //     questionOne.style.display = '';
-
-
-
-  //     // q1.style.display = '';
 
     
-
-      // const question1 [
-      //   { 
-      //     question: 'Commonly used data types do NOT include:',
-      //     answers: [
-      //       { text: "strings", correct: false },
-      //       { text: "booleans", correct: false },
-      //       { text: "alerts", correct: true },
-      //       { text: "numbers", correct: false },
-      //     ]
-      //   }
-  //     ]
-
-
-  //   // correct.addEventListener(click, setNextQuestion);
-
-  //   // function setNextQuestion() {
-  //   //   q1.style.display = 'none';
-  //   //   q2.style.display = '';
-  //   // }
+   
+    
   
-  //     let timeLeft = 75;
-  //     timerDisplay.textContent = timeLeft;
-  
-  //     countdown = setInterval(function () {
-  //       timeLeft--;
-  //       timerDisplay.textContent = timeLeft;
-  //       if (timeLeft <= 0) {
-  //         clearInterval(countdown);
-  //       }
-  //     }, 1000);
-  //   }
-  // });
 
 
 
