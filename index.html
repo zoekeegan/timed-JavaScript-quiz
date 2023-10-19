@@ -5,81 +5,126 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timed JavaScript Quiz</title>
   <link rel="stylesheet" href="style.css">
-  <div id="scores">
-    View high scores
-</div>
 
 </head>
 <body>
+    <div id="scores">
+        View high scores
+    </div>
+
+
     <div id="timer">
         Time: 75
     </div>
 
 
-    <div id="intro"> 
+    <div id="start-page"> 
         <h2 id="title">Coding Quiz Challenge</h2>
         <p>Try to answer the following questions within the time limit. For each incorrect response, the remaining time will decrease by 15 seconds. </p>
         <button id="start-button">Start Quiz</button>
     </div>
 
-    <div id ="question-one">
-        <!-- <h2>Question one goes here.</h2> -->
+    <div id ="question-one" class="questions">
+        <h2>Commonly used data types do NOT include:</h2>
         <div class="answers">
-            <button class="answer-button"></button>
-            <button class="answer-button"></button>
-            <button class="answer-button"></button>
-            <button class="answer-button"></button>
+            <button class="answer-button">
+                strings
+            </button>
+            <button class="answer-button">
+                booleans
+            </button>
+            <button class="answer-button">
+                alerts
+            </button>
+            <button class="answer-button">
+                numbers
+            </button>
         </div>
     </div>
 
-    <!-- <div id="q2" class="questions">
-        <h2>Question 2 goes here.</h2>
+    <div id ="question-two" class="questions">
+        <h2>The condition in an if / else statement is enclosed with _______.</h2>
         <div class="answers">
-            <button class="answer-button">Answer 1</button>
-            <button class="answer-button">Answer 2</button>
-            <button class="answer-button">Answer 3</button>
-            <button class="answer-button">Answer 4</button>
+            <button class="answer-button">
+                quotes
+            </button>
+            <button class="answer-button">
+                curly brackets
+            </button>
+            <button class="answer-button">
+                parenthesis !
+            </button>
+            <button class="answer-button">
+                square brackets 
+            </button>
         </div>
     </div>
 
-        <div id="q3" class="questions">
-            <h2>Question 3 goes here.</h2>
-             <div class="answers">
-                <button class="answer-button">Answer 1</button>
-                <button class="answer-button">Answer 2</button>
-                <button class="answer-button">Answer 3</button>
-                <button class="answer-button">Answer 4</button>
-            </div>
+    <div id ="question-three" class="questions">
+        <h2>Arrays in JavaScript can be used to store _______.</h2>
+        <div class="answers">
+            <button class="answer-button">
+                numbers and strings
+            </button>
+            <button class="answer-button">
+                other arrays
+            </button>
+            <button class="answer-button">
+                booleans
+            </button>
+            <button class="answer-button">
+                all of the above !
+            </button>
+        </div>
+    </div>
+
+    <div id ="question-four" class="questions">
+        <h2>String values must be enclosed within _______ when being assigned to variables.</h2>
+        <div class="answers">
+            <button class="answer-button">
+                commas
+            </button>
+            <button class="answer-button">
+                curly brackets
+            </button>
+            <button class="answer-button">
+                quotes
+            </button>
+            <button class="answer-button">
+                parenthesis
+            </button>
+        </div>
+    </div>
+
+    <div id ="question-five" class="questions">
+        <h2>A very useful tool used during development and debugging for printing content to the debugger is:</h2>
+        <div class="answers">
+            <button class="answer-button">
+                JavaScript
+            </button>
+            <button class="answer-button">
+                terminal/bash
+            </button>
+            <button class="answer-button">
+                for loops
+            </button>
+            <button class="answer-button">
+                console.log
+            </button>
+        </div>
         </div>
 
-        <div id="q4" class="questions">
-            <h2>Question 4 goes here.</h2>
-            <div class="answers">
-                <button class="answer-button">Answer 1</button>
-                <button class="answer-button">Answer 2</button>
-                <button class="answer-button">Answer 3</button>
-                <button class="answer-button">Answer 4</button>
-            </div>
-        </div>
+    <div id = "end-page">
+        <h2>All done!</h2>
+        <h4 id = "score">Final score: </h4> 
+        Enter Initials: <input id="input-bar"> <button id = "submit-button"> Submit
+        </button>
+        
+    </div>
 
-        <div id="q5" class="questions">
-            <h2>Question 5 goes here.</h2>
-            <div class="answers">
-                <button class="answer-button">Answer 1</button>
-                <button class="answer-button">Answer 2</button>
-                <button class="answer-button">Answer 3</button>
-                <button class="answer-button">Answer 4</button>
-            </div>
-        </div>
 
-        <div id="q6" class="questions">
-            <h2>Question 6 goes here.</h2>
-            <div class="answers">
-                <button class="answer-button">Answer 1</button>
-                <button class="answer-button">Answer 2</button>
-                <button class="answer-button">Answer 3</button>
-                <button class="answer-button">Answer 4</button>
-            </div> -->
+    </div>
+
         </div>
 
   </div>

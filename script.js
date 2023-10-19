@@ -1,79 +1,135 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const startButton = document.querySelector('#start-button');
-    const timerDisplay = document.querySelector('#timer');
-    const pageOne = document.querySelector ('#intro');
-    const questionOne = document.querySelector (#question-one);
-    // const q1 = document.querySelector ('#q1');
-    // const q2 = document.querySelector ('#q2');
-    // const q3 = document.querySelector ('#q3');
-    // const q4 = document.querySelector ('#q4');
-    // const q5 = document.querySelector ('#q5');
-    // const q6 = document.querySelector ('#q6');
-    // const answerButton = document.querySelector ('.answer-button');
-    // const correct = document.querySelector ('#correct-1')
-   
-    // const answer = document.getElementById ();
+const startButton = document.getElementById ('start-button');
+const startPage = document.getElementById ('start-page');
+const question = document.getElementById ('question-one');
+const questionTwo = document.getElementById ('question-two');
+const questionThree = document.getElementById ('question-three');
+const questionFour = document.getElementById ('question-four');
+const questionFive = document.getElementById ('question-five');
+const endPage = document.getElementById ('end-page');
+
+
+
+question.style.display = 'none';
+questionTwo.style.display = 'none';
+questionThree.style.display = 'none';
+questionFour.style.display = 'none';
+questionFive.style.display = 'none';
+endPage.style.display = 'none';
+
+startButton.addEventListener('click', startQuiz)
+
+function startQuiz() {
+  console.log('question 1');
+  startPage.style.display = 'none';
+  question.style.display = '';
+}
+  
+question.addEventListener('click', setQuestion2)
+
+function setQuestion2() {
+  console.log('question 2');
+  question.style.display = 'none';
+  questionTwo.style.display = '';
+}
+
+questionTwo.addEventListener('click', setQuestion3)
+
+function setQuestion3() {
+  console.log('question 3');
+  questionTwo.style.display = 'none';
+  questionThree.style.display = '';
+}
+
+questionThree.addEventListener('click', setQuestion4)
+
+function setQuestion4() {
+  console.log ('question 4');
+  questionThree.style.display = 'none';
+  questionFour.style.display = '';
+}
+
+questionFour.addEventListener('click', setQuestion5)
+
+function setQuestion5 (){
+  console.log ('question 5');
+  questionFour.style.display = 'none';
+  questionFive.style.display = '';
+}
+
+questionFive.addEventListener('click', endQuiz)
+  
+function endQuiz () {
+  console.log ('end');
+  questionFive.style.display = 'none';
+  endPage.style.display = '';
+}
   
 
-    let countdown; 
+  
+  
+  
+  
+  
+  
+  //   // const startButton = document.getElementById('#start-button');
+  //   const timerDisplay = document.getElementById('#timer');
+  //   const pageOne = document.getElementById ('#intro');
+  //   const questionOne = document.getElementById ('#question-one');
+  
+    
+  //   let countdown; 
 
-    // q1.style.display = 'none';
-    // q2.style.display = 'none';
-    // q3.style.display = 'none';
-    // q4.style.display = 'none';
-    // q5.style.display = 'none';
-    // q6.style.display = 'none';
-
-  questionOne.style.display = 'none';
+  //   // questionOne.style.display = 'none';
 
   
-    startButton.addEventListener('click', startQuiz);
+  //   startButton.addEventListener('click', startQuiz);
 
   
-    function startQuiz() {
-      startButton.style.display = 'none';
-      pageOne.style.display = 'none';
-      timerDisplay.style.display = 'block';
-      question1.style.display = '';
+  //   function startQuiz() {
+  //     console.log ('started')
+  //     startButton.style.display = 'none';
+  //     pageOne.style.display = 'none';
+  //     timerDisplay.style.display = 'block';
+  //     questionOne.style.display = '';
 
 
 
-      // q1.style.display = '';
+  //     // q1.style.display = '';
 
     
 
-      const question1 [
-        { 
-          question: "Commonly used data types do NOT include:",
-          answers: [
-            { text: "strings", correct: false },
-            { text: "booleans", correct: false },
-            { text: "alerts", correct: true },
-            { text: "numbers", correct: false },
-          ]
-        }
-      ]
+      // const question1 [
+      //   { 
+      //     question: 'Commonly used data types do NOT include:',
+      //     answers: [
+      //       { text: "strings", correct: false },
+      //       { text: "booleans", correct: false },
+      //       { text: "alerts", correct: true },
+      //       { text: "numbers", correct: false },
+      //     ]
+      //   }
+  //     ]
 
 
-    // correct.addEventListener(click, setNextQuestion);
+  //   // correct.addEventListener(click, setNextQuestion);
 
-    // function setNextQuestion() {
-    //   q1.style.display = 'none';
-    //   q2.style.display = '';
-    // }
+  //   // function setNextQuestion() {
+  //   //   q1.style.display = 'none';
+  //   //   q2.style.display = '';
+  //   // }
   
-      let timeLeft = 75;
-      timerDisplay.textContent = timeLeft;
+  //     let timeLeft = 75;
+  //     timerDisplay.textContent = timeLeft;
   
-      countdown = setInterval(function () {
-        timeLeft--;
-        timerDisplay.textContent = timeLeft;
-        if (timeLeft <= 0) {
-          clearInterval(countdown);
-        }
-      }, 1000);
-    }
-  });
+  //     countdown = setInterval(function () {
+  //       timeLeft--;
+  //       timerDisplay.textContent = timeLeft;
+  //       if (timeLeft <= 0) {
+  //         clearInterval(countdown);
+  //       }
+  //     }, 1000);
+  //   }
+  // });
 
 
 
