@@ -27,16 +27,16 @@
     <div id ="question-one" class="questions">
         <h2> Commonly used data types do NOT include:</h2>
         <div class="answers">
-            <button class="answer-button">
+            <button class="answer-button" class="wrong-button">
                 strings
             </button>
-            <button class="answer-button">
+            <button class="answer-button" class="wrong-button"> 
                 booleans
             </button>
-            <button class="answer-button">
+            <button class="answer-button" id="correct-button">
                 alerts
             </button>
-            <button class="answer-button">
+            <button class="answer-button" class="wrong-button">
                 numbers
             </button>
         </div>
@@ -51,8 +51,8 @@
             <button class="answer-button">
                 curly brackets
             </button>
-            <button class="answer-button">
-                parenthesis !
+            <button class="answer-button" class="correct">
+                parenthesis 
             </button>
             <button class="answer-button">
                 square brackets 
@@ -72,8 +72,8 @@
             <button class="answer-button">
                 booleans
             </button>
-            <button class="answer-button">
-                all of the above !
+            <button class="answer-button" class="correct">
+                all of the above 
             </button>
         </div>
     </div>
@@ -87,7 +87,7 @@
             <button class="answer-button">
                 curly brackets
             </button>
-            <button class="answer-button">
+            <button class="answer-button" class="correct">
                 quotes
             </button>
             <button class="answer-button">
@@ -108,11 +108,14 @@
             <button class="answer-button">
                 for loops
             </button>
-            <button class="answer-button">
+            <button class="answer-button" >
                 console.log
             </button>
         </div>
         </div>
+
+     <message id="correct-msg">correct!</message>
+     <message id="wrong-msg">wrong!</message>
 
     <div id = "end-page">
         <h2>All done!</h2>

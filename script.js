@@ -7,6 +7,11 @@ const questionFour = document.getElementById ('question-four');
 const questionFive = document.getElementById ('question-five');
 const endPage = document.getElementById ('end-page');
 const timerDisplay = document.getElementById ('timer');
+const correctButtons = document.querySelectorAll ('correct-button');
+const wrongButtons = document.querySelectorAll ('wrong-button');
+const correctMessage = document.getElementById ('correct-msg');
+const wrongMessage = document.getElementById ('wrong-msg');
+
 
 let countdown; 
 
@@ -29,6 +34,8 @@ questionThree.style.display = 'none';
 questionFour.style.display = 'none';
 questionFive.style.display = 'none';
 endPage.style.display = 'none';
+correctMessage.style.display = 'none';
+wrongMessage.style.display = 'none';
 
 startButton.addEventListener('click', startQuiz)
 
@@ -37,13 +44,35 @@ function startQuiz() {
   startPage.style.display = 'none';
   question.style.display = '';
 }
+
+// correctButtons.addEventListener ('click', sendMessage)
+
+// correctButtons.forEach(function(sendCorrectMessage)) {
+//   sendCorrectMessage.addEventListener('click', function()){
+//     postMessage.textContent = 'Correct!'
+//   }
+// }
+
+// function sendMessage () {
+//   correctMessage.style.display = ''
+// }
+
+
+
+
   
 question.addEventListener('click', setQuestion2)
+
 
 function setQuestion2() {
   console.log('question 2');
   question.style.display = 'none';
   questionTwo.style.display = '';
+  // if (onclick correctAnswer1) {
+  
+  // } else {
+    
+  // }
 }
 
 questionTwo.addEventListener('click', setQuestion3)
@@ -80,7 +109,17 @@ function endQuiz () {
 }
   
 
+// function checkAnswer () {
+// if (correctAnswer == true)
+//   console.log ('correct answer')
+//   alert ('correct')
+//   else 
+//   console.log ('wrong answer')\
+//   alert('wrong')
+
+// }
   
+
   
   
   
